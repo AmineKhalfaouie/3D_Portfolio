@@ -11,7 +11,7 @@ import { useGLTF } from '@react-three/drei'
 import islandScene from '../assets/3d/island.glb'
 import {a} from '@react-spring/three'
 
-export default function Island(props) {
+const Island = (props) => {
   const { nodes, materials } = useGLTF(islandScene)
   const islandRef = useRef()
   return (
@@ -47,3 +47,5 @@ export default function Island(props) {
     </a.group>
   )
 }
+
+export default Island
